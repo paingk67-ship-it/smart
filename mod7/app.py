@@ -30,7 +30,7 @@ model_path = BASE_DIR / "savings_model.joblib"
 savings = joblib.load(model_path)
 savings = joblib.load("savings_model.joblib")
 saver = joblib.load("saver_model.joblib")
-    return savings, saver
+return savings, saver
 
 
 @st.cache_data
