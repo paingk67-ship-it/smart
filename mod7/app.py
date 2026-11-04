@@ -26,8 +26,8 @@ def load_models():
 BASE_DIR = Path(__file__).resolve().parent
 
 # Inside load_models():
-model_path = BASE_DIR / "savings_model.joblib"
-savings = joblib.load(model_path)
+    model_path = BASE_DIR / "savings_model.joblib"
+    savings = joblib.load(model_path)
     savings = joblib.load("savings_model.joblib")
     saver = joblib.load("saver_model.joblib")
     return savings, saver
